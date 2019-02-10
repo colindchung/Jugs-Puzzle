@@ -34,7 +34,7 @@ class JugPuzzle:
         jug2 = jug(0,3)
         moves = 0
         jugs = [jug0, jug1, jug2]
-        while not ((jug0.vol == 4) and (jug1.vol == 4)):
+        while not ((jug0.vol == 4) or (jug1.vol == 4)):
             print(str(moves) + " 0:" + str(jugs[0]) + " 1:" + str(jugs[1]) + " 2:" + str(jugs[2]))
             spill = input("spill from jug: ")
             into = input("into: ")
